@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  padding: 35px;
+  color: white;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+  }
+}
+img {
+  max-width: 100%;
+}
+main > img {
+  width: 200px;
+  margin-bottom: 80px;
+}
+@media (max-width: 375px) {
+  main > img {
+    width: 140px;
+  }
+}
+@media (max-width: 767px) {
+  main .container {
+    text-align: center;
+  }
+  main .text-container {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 768px) {
+  main .container {
+    display: flex;
+    column-gap: 60px;
+  }
+  main .text-container {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  main .text-container {
+    margin-top: 50px;
+  }
+}
+main h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+main p {
+  margin: 25px 0px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+@media (min-width: 1200px) {
+  main h1 {
+    font-size: 45px;
+  }
+  main p {
+    font-size: 21px;
+  }
+}
+main .text-container > a {
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  display: block;
+  background-color: white;
+  padding: 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+}
+@media (max-width: 767px) {
+  main .text-container > a {
+    margin: 0px auto;
+    width: 200px;
+    font-size: 14px;
+  }
+}
+main .text-container > a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+main ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+@media (min-width: 768px) {
+  main ul {
+    justify-content: flex-end;
+  }
+}
+main ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+main ul a:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
