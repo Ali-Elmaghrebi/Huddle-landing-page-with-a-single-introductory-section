@@ -74,20 +74,22 @@ main p {
   }
 }
 main .text-container > a {
-  text-decoration: none;
-  color: hsl(257, 40%, 49%);
   display: block;
   background-color: white;
+  color: hsl(257, 40%, 49%);
+  width: 150px;
   padding: 10px 0px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
   border-radius: 20px;
   text-align: center;
-  width: 150px;
+  text-decoration: none;
 }
 @media (max-width: 767px) {
   main .text-container > a {
     margin: 0px auto;
     width: 200px;
     font-size: 14px;
+    box-shadow: 2px 3px 5px rgb(0 0 0 / 30%);
   }
 }
 main .text-container > a:hover {
